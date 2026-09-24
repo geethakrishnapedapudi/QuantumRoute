@@ -1,0 +1,474 @@
+{
+  "experiment": {
+    "qubits": 9,
+    "qaoa_depth": 1,
+    "gamma": 0.8200000000000001,
+    "beta": 0.76,
+    "expected_energy": -26.190317525367202,
+    "shots_per_run": 1000,
+    "runs": 10,
+    "total_shots": 10000,
+    "parameter_search": {
+      "gamma_min": 0.02,
+      "gamma_max": 2.0,
+      "gamma_step": 0.02,
+      "beta_min": 0.02,
+      "beta_max": 1.0,
+      "beta_step": 0.02,
+      "grid_size": 5000,
+      "top_energy_candidates": 20
+    },
+    "selected_state_quality": {
+      "valid_probability": 0.01403005040288599,
+      "feasible_probability": 0.010516827595830426,
+      "optimal_probability": 0.004145527700420415
+    }
+  },
+  "classical": {
+    "route": [
+      "Depot",
+      "A",
+      "C",
+      "B",
+      "Depot"
+    ],
+    "operational_score": 22.40970741765266,
+    "all_routes": [
+      {
+        "route": [
+          "Depot",
+          "A",
+          "B",
+          "C",
+          "Depot"
+        ],
+        "travel_cost": 25.86507031881783,
+        "operational_score": 25.86507031881783,
+        "time_window_feasible": true,
+        "arrivals": {
+          "A": 4.47213595499958,
+          "B": 11.260361054390437,
+          "C": 16.64552586152494
+        },
+        "violations": []
+      },
+      {
+        "route": [
+          "Depot",
+          "A",
+          "C",
+          "B",
+          "Depot"
+        ],
+        "travel_cost": 22.40970741765266,
+        "operational_score": 22.40970741765266,
+        "time_window_feasible": true,
+        "arrivals": {
+          "A": 4.47213595499958,
+          "C": 10.395817242847535,
+          "B": 15.78098204998204
+        },
+        "violations": []
+      },
+      {
+        "route": [
+          "Depot",
+          "B",
+          "A",
+          "C",
+          "Depot"
+        ],
+        "travel_cost": 28.560176212202318,
+        "operational_score": 28.560176212202318,
+        "time_window_feasible": true,
+        "arrivals": {
+          "B": 6.62872536767062,
+          "A": 13.416950467061476,
+          "C": 19.34063175490943
+        },
+        "violations": []
+      },
+      {
+        "route": [
+          "Depot",
+          "B",
+          "C",
+          "A",
+          "Depot"
+        ],
+        "travel_cost": 22.40970741765266,
+        "operational_score": 91.44431620320263,
+        "time_window_feasible": false,
+        "arrivals": {
+          "B": 6.62872536767062,
+          "C": 12.013890174805123,
+          "A": 17.93757146265308
+        },
+        "violations": [
+          {
+            "city": "A",
+            "arrival": 17.93757146265308,
+            "earliest": 0.0,
+            "latest": 15.0,
+            "lateness": 2.9375714626530787,
+            "early": 0.0
+          }
+        ]
+      },
+      {
+        "route": [
+          "Depot",
+          "C",
+          "A",
+          "B",
+          "Depot"
+        ],
+        "travel_cost": 28.560176212202318,
+        "operational_score": 63.44119087664727,
+        "time_window_feasible": false,
+        "arrivals": {
+          "C": 9.219544457292887,
+          "A": 15.143225745140843,
+          "B": 21.9314508445317
+        },
+        "violations": [
+          {
+            "city": "C",
+            "arrival": 9.219544457292887,
+            "earliest": 10.0,
+            "latest": 25.0,
+            "lateness": 0.0,
+            "early": 0.7804555427071129
+          },
+          {
+            "city": "A",
+            "arrival": 15.143225745140843,
+            "earliest": 0.0,
+            "latest": 15.0,
+            "lateness": 0.14322574514084252,
+            "early": 0.0
+          },
+          {
+            "city": "B",
+            "arrival": 21.9314508445317,
+            "earliest": 5.0,
+            "latest": 20.0,
+            "lateness": 1.9314508445316996,
+            "early": 0.0
+          }
+        ]
+      },
+      {
+        "route": [
+          "Depot",
+          "C",
+          "B",
+          "A",
+          "Depot"
+        ],
+        "travel_cost": 25.86507031881783,
+        "operational_score": 357.69483539266173,
+        "time_window_feasible": false,
+        "arrivals": {
+          "C": 9.219544457292887,
+          "B": 14.604709264427392,
+          "A": 21.39293436381825
+        },
+        "violations": [
+          {
+            "city": "C",
+            "arrival": 9.219544457292887,
+            "earliest": 10.0,
+            "latest": 25.0,
+            "lateness": 0.0,
+            "early": 0.7804555427071129
+          },
+          {
+            "city": "A",
+            "arrival": 21.39293436381825,
+            "earliest": 0.0,
+            "latest": 15.0,
+            "lateness": 6.392934363818249,
+            "early": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "quantum": {
+    "best_route": [
+      "Depot",
+      "A",
+      "C",
+      "B",
+      "Depot"
+    ],
+    "best_operational_score": 22.40970741765266,
+    "best_travel_cost": 22.40970741765266,
+    "optimality_gap": 0.0,
+    "valid_solutions": 128,
+    "valid_rate": 0.0128,
+    "time_feasible_solutions": 98,
+    "time_feasible_rate": 0.0098,
+    "optimal_solutions": 31,
+    "optimal_rate": 0.0031,
+    "runs_with_optimum": 8,
+    "time_window_report": {
+      "feasible": true,
+      "arrivals": {
+        "A": 4.47213595499958,
+        "C": 10.395817242847535,
+        "B": 15.78098204998204
+      },
+      "violations": []
+    },
+    "route_probability_distribution": [
+      {
+        "route": [
+          "Depot",
+          "A",
+          "B",
+          "C",
+          "Depot"
+        ],
+        "probability": 0.004197538106756866,
+        "time_window_feasible": true,
+        "travel_cost": 25.86507031881783,
+        "operational_score": 25.86507031881783,
+        "optimal": false
+      },
+      {
+        "route": [
+          "Depot",
+          "A",
+          "C",
+          "B",
+          "Depot"
+        ],
+        "probability": 0.004145527700420415,
+        "time_window_feasible": true,
+        "travel_cost": 22.40970741765266,
+        "operational_score": 22.40970741765266,
+        "optimal": true
+      },
+      {
+        "route": [
+          "Depot",
+          "B",
+          "A",
+          "C",
+          "Depot"
+        ],
+        "probability": 0.0021737617886531456,
+        "time_window_feasible": true,
+        "travel_cost": 28.560176212202318,
+        "operational_score": 28.560176212202318,
+        "optimal": false
+      },
+      {
+        "route": [
+          "Depot",
+          "B",
+          "C",
+          "A",
+          "Depot"
+        ],
+        "probability": 0.0015546195845677904,
+        "time_window_feasible": false,
+        "travel_cost": 22.40970741765266,
+        "operational_score": 91.44431620320263,
+        "optimal": false
+      },
+      {
+        "route": [
+          "Depot",
+          "C",
+          "A",
+          "B",
+          "Depot"
+        ],
+        "probability": 0.00030468467619227036,
+        "time_window_feasible": false,
+        "travel_cost": 28.560176212202318,
+        "operational_score": 63.44119087664727,
+        "optimal": false
+      },
+      {
+        "route": [
+          "Depot",
+          "C",
+          "B",
+          "A",
+          "Depot"
+        ],
+        "probability": 0.001653918546295504,
+        "time_window_feasible": false,
+        "travel_cost": 25.86507031881783,
+        "operational_score": 357.69483539266173,
+        "optimal": false
+      }
+    ]
+  },
+  "batches": [
+    {
+      "run": 1,
+      "shots": 1000,
+      "valid": 12,
+      "time_feasible": 12,
+      "optimal": 2,
+      "best_route": [
+        "Depot",
+        "A",
+        "C",
+        "B",
+        "Depot"
+      ],
+      "best_score": 22.40970741765266
+    },
+    {
+      "run": 2,
+      "shots": 1000,
+      "valid": 13,
+      "time_feasible": 6,
+      "optimal": 0,
+      "best_route": [
+        "Depot",
+        "A",
+        "B",
+        "C",
+        "Depot"
+      ],
+      "best_score": 25.86507031881783
+    },
+    {
+      "run": 3,
+      "shots": 1000,
+      "valid": 11,
+      "time_feasible": 10,
+      "optimal": 2,
+      "best_route": [
+        "Depot",
+        "A",
+        "C",
+        "B",
+        "Depot"
+      ],
+      "best_score": 22.40970741765266
+    },
+    {
+      "run": 4,
+      "shots": 1000,
+      "valid": 15,
+      "time_feasible": 12,
+      "optimal": 6,
+      "best_route": [
+        "Depot",
+        "A",
+        "C",
+        "B",
+        "Depot"
+      ],
+      "best_score": 22.40970741765266
+    },
+    {
+      "run": 5,
+      "shots": 1000,
+      "valid": 11,
+      "time_feasible": 8,
+      "optimal": 0,
+      "best_route": [
+        "Depot",
+        "A",
+        "B",
+        "C",
+        "Depot"
+      ],
+      "best_score": 25.86507031881783
+    },
+    {
+      "run": 6,
+      "shots": 1000,
+      "valid": 12,
+      "time_feasible": 9,
+      "optimal": 7,
+      "best_route": [
+        "Depot",
+        "A",
+        "C",
+        "B",
+        "Depot"
+      ],
+      "best_score": 22.40970741765266
+    },
+    {
+      "run": 7,
+      "shots": 1000,
+      "valid": 16,
+      "time_feasible": 12,
+      "optimal": 5,
+      "best_route": [
+        "Depot",
+        "A",
+        "C",
+        "B",
+        "Depot"
+      ],
+      "best_score": 22.40970741765266
+    },
+    {
+      "run": 8,
+      "shots": 1000,
+      "valid": 9,
+      "time_feasible": 7,
+      "optimal": 2,
+      "best_route": [
+        "Depot",
+        "A",
+        "C",
+        "B",
+        "Depot"
+      ],
+      "best_score": 22.40970741765266
+    },
+    {
+      "run": 9,
+      "shots": 1000,
+      "valid": 13,
+      "time_feasible": 10,
+      "optimal": 2,
+      "best_route": [
+        "Depot",
+        "A",
+        "C",
+        "B",
+        "Depot"
+      ],
+      "best_score": 22.40970741765266
+    },
+    {
+      "run": 10,
+      "shots": 1000,
+      "valid": 16,
+      "time_feasible": 12,
+      "optimal": 5,
+      "best_route": [
+        "Depot",
+        "A",
+        "C",
+        "B",
+        "Depot"
+      ],
+      "best_score": 22.40970741765266
+    }
+  ],
+  "evidence": {
+    "type": "QAOA proof-of-concept",
+    "simulator": "Pure Python statevector",
+    "quantum_advantage_claimed": false,
+    "traffic_data": "Synthetic",
+    "time_window_data": "Synthetic",
+    "time_window_qaoa_model": "Position-level surrogate",
+    "exact_time_validation": "Classical post-processing",
+    "parameter_selection": "Expected-energy search followed by feasible/optimal probability screening among low-energy candidates"
+  }
+}

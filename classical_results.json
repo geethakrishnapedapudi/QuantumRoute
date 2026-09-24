@@ -1,0 +1,187 @@
+{
+  "method": "Exact exhaustive enumeration of all delivery-node permutations",
+  "delivery_nodes": [
+    "A",
+    "B",
+    "C"
+  ],
+  "number_of_routes": 6,
+  "number_of_feasible_routes": 3,
+  "route": [
+    "Depot",
+    "A",
+    "C",
+    "B",
+    "Depot"
+  ],
+  "operational_score": 22.40970741765266,
+  "travel_cost": 22.40970741765266,
+  "time_window_feasible": true,
+  "arrivals": {
+    "A": 4.47213595499958,
+    "C": 10.395817242847535,
+    "B": 15.78098204998204
+  },
+  "violations": [],
+  "all_routes": [
+    {
+      "route": [
+        "Depot",
+        "A",
+        "B",
+        "C",
+        "Depot"
+      ],
+      "travel_cost": 25.86507031881783,
+      "operational_score": 25.86507031881783,
+      "time_window_feasible": true,
+      "arrivals": {
+        "A": 4.47213595499958,
+        "B": 11.260361054390437,
+        "C": 16.64552586152494
+      },
+      "violations": []
+    },
+    {
+      "route": [
+        "Depot",
+        "A",
+        "C",
+        "B",
+        "Depot"
+      ],
+      "travel_cost": 22.40970741765266,
+      "operational_score": 22.40970741765266,
+      "time_window_feasible": true,
+      "arrivals": {
+        "A": 4.47213595499958,
+        "C": 10.395817242847535,
+        "B": 15.78098204998204
+      },
+      "violations": []
+    },
+    {
+      "route": [
+        "Depot",
+        "B",
+        "A",
+        "C",
+        "Depot"
+      ],
+      "travel_cost": 28.560176212202318,
+      "operational_score": 28.560176212202318,
+      "time_window_feasible": true,
+      "arrivals": {
+        "B": 6.62872536767062,
+        "A": 13.416950467061476,
+        "C": 19.34063175490943
+      },
+      "violations": []
+    },
+    {
+      "route": [
+        "Depot",
+        "B",
+        "C",
+        "A",
+        "Depot"
+      ],
+      "travel_cost": 22.40970741765266,
+      "operational_score": 91.44431620320263,
+      "time_window_feasible": false,
+      "arrivals": {
+        "B": 6.62872536767062,
+        "C": 12.013890174805123,
+        "A": 17.93757146265308
+      },
+      "violations": [
+        {
+          "city": "A",
+          "arrival": 17.93757146265308,
+          "earliest": 0.0,
+          "latest": 15.0,
+          "lateness": 2.9375714626530787,
+          "early": 0.0
+        }
+      ]
+    },
+    {
+      "route": [
+        "Depot",
+        "C",
+        "A",
+        "B",
+        "Depot"
+      ],
+      "travel_cost": 28.560176212202318,
+      "operational_score": 63.44119087664727,
+      "time_window_feasible": false,
+      "arrivals": {
+        "C": 9.219544457292887,
+        "A": 15.143225745140843,
+        "B": 21.9314508445317
+      },
+      "violations": [
+        {
+          "city": "C",
+          "arrival": 9.219544457292887,
+          "earliest": 10.0,
+          "latest": 25.0,
+          "lateness": 0.0,
+          "early": 0.7804555427071129
+        },
+        {
+          "city": "A",
+          "arrival": 15.143225745140843,
+          "earliest": 0.0,
+          "latest": 15.0,
+          "lateness": 0.14322574514084252,
+          "early": 0.0
+        },
+        {
+          "city": "B",
+          "arrival": 21.9314508445317,
+          "earliest": 5.0,
+          "latest": 20.0,
+          "lateness": 1.9314508445316996,
+          "early": 0.0
+        }
+      ]
+    },
+    {
+      "route": [
+        "Depot",
+        "C",
+        "B",
+        "A",
+        "Depot"
+      ],
+      "travel_cost": 25.86507031881783,
+      "operational_score": 357.69483539266173,
+      "time_window_feasible": false,
+      "arrivals": {
+        "C": 9.219544457292887,
+        "B": 14.604709264427392,
+        "A": 21.39293436381825
+      },
+      "violations": [
+        {
+          "city": "C",
+          "arrival": 9.219544457292887,
+          "earliest": 10.0,
+          "latest": 25.0,
+          "lateness": 0.0,
+          "early": 0.7804555427071129
+        },
+        {
+          "city": "A",
+          "arrival": 21.39293436381825,
+          "earliest": 0.0,
+          "latest": 15.0,
+          "lateness": 6.392934363818249,
+          "early": 0.0
+        }
+      ]
+    }
+  ]
+}
